@@ -14,7 +14,7 @@ myheading1='Predicting Mortgage Loan Approval - Khilawar'
 image1='ames_welcome.jpeg'
 tabtitle = 'Mortgage Loans for Homes'
 sourceurl = 'https://www.kaggle.com/burak3ergun/loan-data-set'
-githublink = 'https://github.com/austinlasseter/mortgage-loan-prediction'
+githublink = 'https://github.com/khilawar4/unit-3-loan-app'
 
 ########### open the pickle files ######
 # dataframes for visualization
@@ -119,11 +119,11 @@ app.layout = html.Div(children=[
                 html.Div('Credit History'),
                 dcc.Input(id='Credit_History', value=1, type='number', min=0, max=1, step=1),
                 html.Div('Loan Amount (thousands)'),
-                dcc.Input(id='LoanAmount', value=100, type='number', min=10, max=250, step=10),
+                dcc.Input(id='LoanAmount', value=1000, type='number', min=10, max=250, step=10),
                 html.Div('Term (months)'),
-                dcc.Input(id='Loan_Amount_Term', value=360, type='number', min=120, max=480, step=50),
+                dcc.Input(id='Loan_Amount_Term', value=300, type='number', min=120, max=480, step=50),
                 html.Div('Applicant Monthly Income'),
-                dcc.Input(id='ApplicantIncome', value=5500, type='number', min=0, max=6000, step=50),
+                dcc.Input(id='ApplicantIncome', value=3000, type='number', min=0, max=6000, step=50),
                 html.Div('Co-Applicant Monthly Income'),
                 dcc.Input(id='CoapplicantIncome', value=2500, type='number', min=0, max=6000, step=10),
                 html.Div('Property Area'),
